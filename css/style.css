@@ -1,0 +1,47 @@
+#outfitmatch {
+    width: 250px;
+    height: 750px;
+    line-height: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    right: 10px;
+    top: 2px;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+.outfitLogin {
+    padding: 10px;
+    color: white;
+
+}
+
+#icon {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+
+.subUser {
+    border: dashed;
+    border-color: white;
+    height: 150px;
+
+}
+
+.nameDiv {
+    float: left;
+}
+
+.addButton {
+    float: right;
+    height: 10px;
+    width: 15px;
+}
+
+.closetImg {
+    height: 50px;
+    width: 50px;
+}

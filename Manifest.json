@@ -1,0 +1,61 @@
+{
+  "name": "OutfitMatch Extention",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Match your cloths from various e-shop websites.",
+  "icons": {
+    "16": "images/icons/icon16.png",
+    "48": "images/icons/icon48.png",
+    "128": "images/icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icons/icon16.png"
+  },
+  "background": {
+    "scripts": [
+      "js/eventPage.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "css": [
+        "css/style.css"
+      ],
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "js/lib/firebase-app.js",
+        "js/lib/firebase-auth.js",
+        "js/lib/firebase-database.js",
+        "js/lib/firebase.js",
+        "js/lib/initialize.js",
+        "js/lib/jquery-3.1.1.min.js",
+        "js/login.js",
+        "js/closet.js",
+        "js/new-closet.js",
+        "js/canvas.js",
+        "js/register.js",
+        "js/content.js"
+      ]
+    }
+  ],
+  "content_security_policy": "script-src 'self'  https://ssl.google-analytics.com; object-src 'self'",
+  "options_page": "option_custom/index.html",
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications",
+    "http://*/*",
+    "https://*/*",
+    "contextMenus"
+  ],
+  "web_accessible_resources": [
+    "js/modules/*",
+    "js/lib/*",
+    "images/*.png",
+    "images/icons/*.png",
+    "html/*.html"
+  ]
+}
